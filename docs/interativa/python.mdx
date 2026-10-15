@@ -1,0 +1,33 @@
+---
+title: Meia Vida
+---
+
+# O gráfico da meia vida do múon em relação ao fator de lorentz
+
+O estudo sobre o tempo de meia-vida dos múons ajuda-nos a comprovar a teoria relativística de Einstein com cálculos precisos e concretos. Na guia Partículas: invisíveis, porém reais / Múon: uma partícula especial entendemos mais a fundo como ocorre esse fenômeno em relação ao tempo e ao fator de lorentz e sua importância para a relatividade. Lembra-se do gráfico que vimos lá? Vamos agora aprender como fazer um igual!
+
+import PythonRunner from '@site/src/components/PythonRunner';
+
+## Faça você mesmo
+
+Altere os valores e clique em **Executar**:
+
+<PythonRunner
+  packages={['numpy', 'matplotlib']}
+  initialCode={`
+import numpy as np
+import matplotlib.pyplot as plt
+
+tau0 = 2.197  # meia-vida própria do múon (µs)
+v = np.linspace(0.01, 0.999, 300)  # v/c
+gamma = 1 / np.sqrt(1 - v**2)
+
+plt.plot(gamma, gamma * tau0)
+plt.xlabel('Fator de Lorentz (γ)')
+plt.ylabel('Tempo de vida no laboratório (µs)')
+plt.grid(True)
+plt.show()
+`}
+/>
+
+

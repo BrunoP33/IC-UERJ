@@ -1,0 +1,76 @@
+/**
+ * Paleta educacional — Física, Ciência e Aprendizado
+ *
+ * Azul: conhecimento, confiança e ciência.
+ * Verde-petróleo: crescimento e descoberta.
+ * Amarelo-âmbar: curiosidade e destaque.
+ */
+
+/* =========================================
+   TEMA CLARO
+   ========================================= */
+
+:root {
+  /* Cor principal: azul do conhecimento */
+  --ifm-color-primary: #3157A4;
+  --ifm-color-primary-dark: #2C4E94;
+  --ifm-color-primary-darker: #274583;
+  --ifm-color-primary-darkest: #20386A;
+  --ifm-color-primary-light: #3D68B8;
+  --ifm-color-primary-lighter: #527BC5;
+  --ifm-color-primary-lightest: #7294D5;
+
+  /* Cores complementares da identidade visual */
+  --cor-ensino-verde: #238A83;
+  --cor-ensino-amarelo: #E7A93B;
+
+  /* Texto e títulos */
+  --ifm-font-color-base: #263449;
+  --ifm-heading-color: #203657;
+
+  /* Fundo */
+  --ifm-background-color: #F8FAFD;
+  --ifm-background-surface-color: #FFFFFF;
+
+  /* Links */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-dark);
+
+  /* Código */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(49, 87, 164, 0.10);
+}
+
+/* =========================================
+   TEMA ESCURO
+   ========================================= */
+
+[data-theme='dark'] {
+  /* Azul mais claro para garantir legibilidade */
+  --ifm-color-primary: #8DB4FF;
+  --ifm-color-primary-dark: #7CA5F5;
+  --ifm-color-primary-darker: #6D97E8;
+  --ifm-color-primary-darkest: #5D84D2;
+  --ifm-color-primary-light: #A4C4FF;
+  --ifm-color-primary-lighter: #BAD2FF;
+  --ifm-color-primary-lightest: #D1E0FF;
+
+  /* Cores complementares adaptadas ao fundo escuro */
+  --cor-ensino-verde: #65C9BC;
+  --cor-ensino-amarelo: #F4C66B;
+
+  /* Texto e títulos */
+  --ifm-font-color-base: #E1E9F5;
+  --ifm-heading-color: #F0F5FF;
+
+  /* Fundo */
+  --ifm-background-color: #111827;
+  --ifm-background-surface-color: #192438;
+
+  /* Links */
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+
+  /* Código */
+  --docusaurus-highlighted-code-line-bg: rgba(141, 180, 255, 0.14);
+}
