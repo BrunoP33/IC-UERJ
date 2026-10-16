@@ -1,0 +1,38 @@
+"use strict";(self.webpackChunkmeu_site=self.webpackChunkmeu_site||[]).push([["584"],{7308(a,e,o){o.r(e),o.d(e,{metadata:()=>i,default:()=>x,frontMatter:()=>d,contentTitle:()=>l,toc:()=>m,assets:()=>p});var i=JSON.parse('{"id":"interativa/visualizacao","title":"Visualiza\xe7\xe3o dos Raios C\xf3smicos","description":"Explore a simula\xe7\xe3o interativa diretamente na p\xe1gina:","source":"@site/docs/interativa/visualizacao.mdx","sourceDirName":"interativa","slug":"/interativa/visualizacao","permalink":"/IC-UERJ/docs/interativa/visualizacao","draft":false,"unlisted":false,"editUrl":"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/interativa/visualizacao.mdx","tags":[],"version":"current","sidebarPosition":2,"frontMatter":{"title":"Visualiza\xe7\xe3o dos Raios C\xf3smicos","sidebar_position":2},"sidebar":"tutorialSidebar","previous":{"title":"\xc1rea Interativa","permalink":"/IC-UERJ/docs/interativa/"},"next":{"title":"Dasboard","permalink":"/IC-UERJ/docs/interativa/dash"}}'),r=o(4848),s=o(8453),t=o(6540);let n={subsolo:{nome:"Subsolo",qtd:6,velocidade:6,texto:"No subsolo, a maior parte dos raios c\xf3smicos \xe9 absorvida pelo solo e pelas estruturas acima."},cidade:{nome:"N\xedvel do solo",qtd:18,velocidade:4.5,texto:"Ao n\xedvel do solo, ainda somos atravessados por m\xfaons produzidos na atmosfera."},montanha:{nome:"Montanha",qtd:38,velocidade:3,texto:"Em grandes altitudes, h\xe1 menos atmosfera para bloquear as part\xedculas c\xf3smicas."},balao:{nome:"Bal\xe3o de Victor Hess",qtd:65,velocidade:2,texto:"No bal\xe3o de Victor Hess, o aumento da radia\xe7\xe3o foi decisivo para provar a origem c\xf3smica dessas part\xedculas."}};function c(){let[a,e]=(0,t.useState)("cidade"),o=n[a];return(0,r.jsxs)("div",{className:"cv",children:[(0,r.jsx)("style",{children:`
+        .cv { background: var(--ifm-card-background-color, var(--ifm-background-surface-color)); color: var(--ifm-color-content); border: 1px solid var(--ifm-color-emphasis-200); border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 30px; margin: 20px auto; font-family: var(--ifm-font-family-base); display: flex; gap: 30px; flex-wrap: wrap; }
+        .cv button { font-family: inherit; }
+        .cv button:focus-visible { outline: 2px solid var(--ifm-color-primary); outline-offset: 2px; }
+
+        .cv-sidebar { flex: 0 0 210px; display: flex; flex-direction: column; gap: 26px; }
+        .cv-sidebar h3 { margin: 0 0 14px 0; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.65; border-bottom: 1px solid var(--ifm-color-emphasis-300); padding-bottom: 8px; }
+
+        .cv-opts { display: flex; flex-direction: column; gap: 8px; }
+        .cv-opt { width: 100%; min-height: 46px; padding: 8px 16px; border-radius: 8px; font-size: 15px; font-weight: 600; line-height: 1.3; cursor: pointer; background: transparent; color: var(--ifm-color-content); border: 1px solid var(--ifm-color-emphasis-300); transition: background 0.2s, border-color 0.2s, box-shadow 0.2s; }
+        .cv-opt:hover { border-color: var(--ifm-color-primary); }
+        .cv-opt[aria-pressed='true'] { background: var(--ifm-color-primary); color: #ffffff; border-color: var(--ifm-color-primary); box-shadow: 0 0 0 2px var(--ifm-card-background-color, var(--ifm-background-surface-color)), 0 0 0 4px var(--ifm-color-primary); }
+        .cv-opt[aria-pressed='true']:hover { background: var(--ifm-color-primary-dark); border-color: var(--ifm-color-primary-dark); }
+        .cv-opt[aria-pressed='true']::before { content: '\u{2713}'; margin-right: 8px; }
+
+        .cv-main { flex: 1 1 480px; min-width: 0; }
+        .cv-main h2 { margin-top: 0; color: var(--ifm-color-primary); }
+        .cv-intro { margin: 0 0 20px; font-size: 15px; line-height: 1.55; opacity: 0.85; }
+
+        .cv-scene { position: relative; height: 250px; border-radius: 10px; overflow: hidden; background: #000; box-shadow: 0 4px 14px rgba(0,0,0,0.18); margin-bottom: 20px; }
+        .cv-particle { position: absolute; width: 3px; height: 22px; border-radius: 2px; background: rgba(214, 214, 230, 0.8); animation: cv-fall linear infinite; }
+        @keyframes cv-fall {
+          0% { transform: translateY(-30px); opacity: 0; }
+          20% { opacity: 0.9; }
+          80% { opacity: 0.9; }
+          100% { transform: translateY(270px); opacity: 0; }
+        }
+
+        .cv-card { border: 1px solid var(--ifm-color-emphasis-300); border-radius: 8px; padding: 18px; background: var(--ifm-background-color); }
+        .cv-desc { margin: 0 0 12px; font-size: 15px; line-height: 1.55; opacity: 0.85; }
+        .cv-key { margin: 0; font-size: 15px; font-weight: 600; line-height: 1.55; }
+        .cv-foot { margin: 16px 0 0; font-size: 13px; opacity: 0.6; }
+
+        @media (max-width: 780px) {
+          .cv-sidebar { flex: 1 1 100%; }
+          .cv-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+      `}),(0,r.jsx)("aside",{className:"cv-sidebar",children:(0,r.jsxs)("div",{children:[(0,r.jsx)("h3",{children:"Altitude"}),(0,r.jsx)("div",{className:"cv-opts",role:"group","aria-label":"Altitude",children:Object.entries(n).map(([o,i])=>(0,r.jsx)("button",{type:"button",className:"cv-opt","aria-pressed":a===o,onClick:()=>e(o),children:i.nome},o))})]})}),(0,r.jsxs)("div",{className:"cv-main",children:[(0,r.jsx)("h2",{children:"Raios C\xf3smicos e Altitude"}),(0,r.jsx)("p",{className:"cv-intro",children:"Em 1912, Victor Hess subiu em um bal\xe3o e descobriu que a radia\xe7\xe3o aumenta com a altitude. Explore visualmente esse efeito."}),(0,r.jsx)("div",{className:"cv-scene",role:"img","aria-label":`Anima\xe7\xe3o de part\xedculas caindo. Altitude: ${o.nome}.`,children:Array.from({length:o.qtd}).map((a,e)=>{let i=o.velocidade+e%4*.3,s=-(.4*e%i);return(0,r.jsx)("div",{className:"cv-particle",style:{left:`${(13*e+7)%95}%`,animationDuration:`${i}s`,animationDelay:`${s}s`}},e)})}),(0,r.jsxs)("div",{className:"cv-card",children:[(0,r.jsx)("p",{className:"cv-desc",children:o.texto}),(0,r.jsx)("p",{className:"cv-key",children:"Quanto maior a altitude, maior a intensidade observada de raios c\xf3smicos."})]}),(0,r.jsx)("p",{className:"cv-foot",children:"Visualiza\xe7\xe3o conceitual inspirada no experimento hist\xf3rico de Victor Hess."})]})]})}let d={title:"Visualiza\xe7\xe3o dos Raios C\xf3smicos",sidebar_position:2},l="Visualiza\xe7\xe3o dos Raios C\xf3smicos",p={},m=[];function u(a){let e={h1:"h1",header:"header",p:"p",...(0,s.R)(),...a.components};return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(e.header,{children:(0,r.jsx)(e.h1,{id:"visualiza\xe7\xe3o-dos-raios-c\xf3smicos",children:"Visualiza\xe7\xe3o dos Raios C\xf3smicos"})}),"\n",(0,r.jsx)(e.p,{children:"Explore a simula\xe7\xe3o interativa diretamente na p\xe1gina:"}),"\n","\n",(0,r.jsx)(c,{})]})}function x(a={}){let{wrapper:e}={...(0,s.R)(),...a.components};return e?(0,r.jsx)(e,{...a,children:(0,r.jsx)(u,{...a})}):u(a)}},8453(a,e,o){o.d(e,{R:()=>t,x:()=>n});var i=o(6540);let r={},s=i.createContext(r);function t(a){let e=i.useContext(s);return i.useMemo(function(){return"function"==typeof a?a(e):{...e,...a}},[e,a])}function n(a){let e;return e=a.disableParentContext?"function"==typeof a.components?a.components(r):a.components||r:t(a.components),i.createElement(s.Provider,{value:e},a.children)}}}]);

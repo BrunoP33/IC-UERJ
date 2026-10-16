@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmeu_site=self.webpackChunkmeu_site||[]).push([["3220"],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/IC-UERJ/blog","blogTitle":"Blog","authorsListPath":"/IC-UERJ/blog/authors"}')}}]);
