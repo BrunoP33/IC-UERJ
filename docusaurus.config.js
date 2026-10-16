@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Desenvolvimento de Janelas interativas para o ensino.',
   tagline: 'IC-UERJ',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon_original.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -20,10 +20,8 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+ url: 'https://BrunoP33.github.io',
+baseUrl: '/IC-UERJ/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -86,7 +84,7 @@ const config = {
         title: 'STARDUST',
         logo: {
           alt: 'Dio SBR',
-          src: 'img/steel ball.png',
+          src: 'img/stardustsemfundo.png',
         },
         items: [
           {

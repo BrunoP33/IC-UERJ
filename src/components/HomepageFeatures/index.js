@@ -4,12 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Uma janela para o céu',
+    Svg: require('@site/static/img/logo_original_sem_fundo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Teste ideias, varie parâmetros e erre sem medo. Cada janela é um pequeno laboratório para descobrir como as coisas funcionam.
       </>
     ),
   },
