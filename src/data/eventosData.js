@@ -1,5 +1,4 @@
 // Dados do Dashboard de Eventos de Partículas
-// Extraído do app.py (Dash) — mesma ideia do quizData.js usado no quiz
 
 // Metadados de cada evento simulado
 export const metadadosEventos = {

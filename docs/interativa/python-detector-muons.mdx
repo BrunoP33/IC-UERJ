@@ -1,0 +1,16 @@
+---
+title: O gráfico dos hits do múon em nosso detector
+---
+
+# O gráfico dos hits do múon em nosso detector
+
+O estudo sobre a detecção dos múons nas estações de medida ajuda-nos a entender melhor como essas partículas chegam até nós diretamente de grandes altitudes e como o hardware transforma a presença delas em sinais elétricos. Na guia A relação das partículas com o mundo entendemos mais a fundo como ocorre esse processo e visualizamos como, em determinada configuração, a detecção funciona. Lembra-se do gráfico que vimos lá? Vamos agora aprender como fazer um igual!
+
+import PythonRunner from '@site/src/components/PythonRunner';
+import { codigoDetectorMuons, pacotesDetectorMuons } from '@site/src/data/pythonDetectorMuonsData';
+
+## Faça você mesmo
+
+Clique em **Executar** e aguarde: gerar a animação leva de meio minuto a um minuto, dependendo do computador. Depois, experimente mudar valores como `muon_rate` (média de múons por passo), `detector_radius` (raio do detector) ou `detector_length` (comprimento do detector) e execute de novo.
+
+<PythonRunner packages={pacotesDetectorMuons} initialCode={codigoDetectorMuons} />

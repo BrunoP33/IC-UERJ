@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Uma janela para o céu',
+    title: 'Uma janela para o conhecimento',
     Svg: require('@site/static/img/logo_original_sem_fundo.svg').default,
     description: (
       <>
